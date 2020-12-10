@@ -25,8 +25,8 @@ document.body.onload = () => setTimeout(async () => {
             minWidth: 200.00,
             scale: 0.50,
             scaleMobile: 1.00,
-            color: 0x7a478a,
-            backgroundColor: 0x1e0626,
+            color: 0x9099e0,
+            backgroundColor: 0x111e3f,
             points: 17.00,
             maxDistance: 16.00
         });
