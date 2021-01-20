@@ -1,31 +1,36 @@
 :root {
     --scrollbarBG: #46004900;
-    --thumbBG: #293d72;
+    --thumbBG: #8c7e97;
 }
 
 html, body {
-    color: #eee;
-    background-color: #160b2a;
-    width:100%;
-    height:100%;
+    position: absolute;
+    width: 100%;
     margin: 0px;
     padding:0px;
     overflow-x: hidden;
-    overflow-y: overlay;
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
     scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+    background-color: #1b1226;
+    z-index: -2;
 }
 
-.vanta-canvas {
+#scroll {
+    position: absolute;
+    top: 85vh;
+}
+
+#canvas, .vanta-canvas {
     position: fixed!important;
-    animation: fadeIn ease 3s;
-    -webkit-animation: fadeIn ease 3s;
-    -moz-animation: fadeIn ease 3s;
-    -o-animation: fadeIn ease 3s;
-    -ms-animation: fadeIn ease 3s;
+    animation: fadeIn ease 2s;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
 }
 
 body::-webkit-scrollbar {
@@ -42,12 +47,11 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid var(--scrollbarBG);
 }
 
-nav { margin-bottom: 1%; }
-
 a {
     display: inline-flex;
     transition: all 0.5s ease-in-out;
     color: #eee;
+    outline: none;
     text-decoration: none;
     margin: 0.5em;
     padding: 0.5em;
@@ -64,71 +68,10 @@ a:hover {
     transform: scale(1.1);
 }
 
-header {
-    color: #eee;
-    margin-top: 5%;
-    margin-bottom: 3%;
-}
-
 #avatar {
     width: 6em;
     height: 6em;
-    border: solid 5px var(--thumbBG);
     border-radius: 50%;
-    animation: morph 3s linear infinite;
-    -webkit-animation: morph 3s linear infinite;
-    -moz-animation: morph 3s linear infinite;
-    -o-animation: morph 3s linear infinite;
-    -ms-animation: morph 3s linear infinite;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: center;
-    align-items: stretch;
-    align-content: stretch;
-}
-
-.read-more {
-    background-color: transparent;
-    margin: auto;
-    display: block;
-    color: #eee;
-    border: none;
-}
-
-.panel {
-    margin: auto;
-    margin-bottom: 5em;
-    padding: 2em;
-    max-width: 1000px;
-}
-
-.width-1-3l {
-    width: 33.33%; 
-}
-
-section {
-    padding: 1em;
-    background-color: rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
-}
-
-@media only screen and (max-width: 1000px) {
-    .width-1-2m {
-        width: 50%;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .width-1-1s {
-        width: 100%;
-    }
 }
 
 footer {
@@ -142,35 +85,7 @@ footer {
     z-index: 1;
 }
 
-.fade-in {
-    animation: fadeIn ease 1s;
-    -webkit-animation: fadeIn ease 1s;
-    -moz-animation: fadeIn ease 1s;
-    -o-animation: fadeIn ease 1s;
-    -ms-animation: fadeIn ease 1s;
-}
-
 @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-    
-@-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-    
-@-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-    
-@-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-    
-@-ms-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
 }

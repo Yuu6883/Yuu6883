@@ -13,23 +13,28 @@ document.body.onload = () => setTimeout(async () => {
     if (ctx) {
 
         console.log("Loading three.js");
-        await loadScript("assets/three.r95.min.js");
-        console.log("Loading vanta.js");
-        await loadScript("assets/vanta.net.min.js");
+        await loadScript("assets/three.min.js");
 
-        VANTA.NET({
-            el: document.body,
+        console.log("Loading vanta.waves.js");
+        await loadScript("assets/vanta.waves.min.js");
+
+        VANTA.WAVES({
+            el: document.getElementById("canvas"),
             mouseControls: true,
             touchControls: true,
+            gyroControls: false,
             minHeight: 200.00,
             minWidth: 200.00,
-            scale: 0.50,
+            scale: 1.00,
             scaleMobile: 1.00,
-            color: 0x9099e0,
-            backgroundColor: 0x111e3f,
-            points: 17.00,
-            maxDistance: 16.00
+            color: 0x1b1226,
+            shininess: 20.00,
+            waveHeight: 33.00,
+            waveSpeed: 0.25,
+            zoom: 0.86
         });
+
+        // console.log(rings);
     } else {
         console.log("WebGL not supported");
     }
