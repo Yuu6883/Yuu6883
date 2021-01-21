@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Web Developer & Software Engineer">
+    <meta property="og:url" content="https://yuu.dev">
+    <meta property="og:image" content="https://avatars2.githubusercontent.com/u/38842891">
 	<meta name="author" content="Yuu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.11/dist/css/uikit.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.11/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.11/dist/js/uikit-icons.min.js"></script>
@@ -16,38 +17,53 @@
     <div id="canvas"></div>
     <div id="page" class="uk-width-1-1 uk-margin-xlarge-top uk-margin-xlarge">
         <header id="header" class="uk-light uk-text-center uk-margin-large" 
-            uk-parallax="opacity: 1,0; easing: 0.5; target: body; viewport: 0.3;" >
+            uk-parallax="opacity: 1,0; easing: 0.5; target: body; viewport: 0.02;" >
             <h1>Web Developer & Software Engineer</h1>
             <h2>I write optimized code for the web</h2>
         </header>
+        <div class="screen-center">
+            <img id="avatar" 
+                class="uk-margin-auto"
+                uk-parallax="y: 0,-35vh; easing: 0.5; target: body; viewport: 0.05;"
+                uk-scrollspy="cls: uk-animation-fade; repeat: true; delay: 500"
+                src="https://avatars2.githubusercontent.com/u/38842891" alt="git pfp">
+        </div>
         <main>
-            <h2 class="uk-header uk-text-center uk-margin-medium">
-                <img id="avatar" uk-parallax="y: 0,50,0; easing: 2; target: body; viewport: 0.5;"
-                    uk-scrollspy="cls: uk-animation-fade; repeat: true; delay: 500"
-                    src="https://avatars2.githubusercontent.com/u/38842891" alt="git pfp">
-            </h2>
             <h3 id="scroll" class="uk-width-1-1 uk-light uk-text-center"
-                uk-parallax="opacity: 1,0; easing: 0.1; target: body; viewport: 0.2;">
+                uk-parallax="opacity: 1,0; easing: 0.1; target: body; viewport: 0.02;">
                 Scroll down to learn more about me</h3>
-            <section id="home"
-                uk-parallax="y: 0,-150; opacity: 0,1,1,0; easing: 0.5; target: body; viewport: 0.7;" 
-                class="uk-light uk-section uk-margin-auto uk-margin-large uk-width-2-3@l uk-width-4-5 uk-height-large">
-                <h2 class="uk-text-center">Hi, Yuu here.</h2>
-                <h4 class="uk-text-large">
-                    I'm currently a junior in university, majored in Computer Science. 
-                    As a typical CS weeb, I love coding as much as anime.
-                    Recent interests include: serverless, deep learning, GPU programming (CUDA), and cyber security.
-                    My dream is to become a game developer or a software engineer.
-                    Unlike most web developers nowadays, I value execution speed as much as code structure, so a lot of my projects are data-oriented and performance driven.
-                    I also value anonymity a lot, which is why I just picked an online name "Yuu" from some random anime.</h4>
-            </section>
-            <section id="proj" class="uk-light uk-section uk-margin-auto uk-margin-large uk-width-1-2@l uk-width-4-5 uk-height-large">
-                <h3 class="uk-text-center">Projects</h3>        
-                <p class="uk-text-center">Coming soon</p>
-                <div class="uk-text-center">
-                    <button class="uk-button uk-button-default">Read More</button>
-                </div>
-            </section>
+            <div class="screen-center uk-width-2-3@l uk-width-4-5">
+                <section id="home"
+                    uk-parallax="y: 7vh,-7vh; opacity: 0,1,1,1,1,0; easing: 1; target: body; viewport: 0.2;" 
+                    class="uk-light">
+                    <h2 class="uk-text-center">Hi, Yuu here.</h2>
+                    <h4 class="text-medium">
+                        I'm currently a junior in university, majored in Computer Science. 
+                        As a typical CS weeb, I love coding as much as anime.
+                        Recent interests include: serverless, deep learning, GPU programming (CUDA), and cyber security.
+                        My goal is to become a game developer or a software engineer.
+                        Unlike most web developers nowadays, I value execution speed as much as code structure, so a lot of my projects are data-oriented and performance driven.
+                        I also value anonymity a lot, which is why I just picked an online name "Yuu" from some random anime.
+                    </h4>
+                </section>
+            </div>
+            <div class="screen-center uk-width-2-3@l uk-width-4-5">
+                <section id="skills" class="uk-light"
+                    uk-parallax="y: 7vh,-7vh; opacity: 0,1,1,1,1,0; easing: 2; target: body; viewport: 0.5;" >
+                    <h2 class="uk-text-center">My Skill Set</h2>        
+                    <h5 class="uk-text-center">Coming soon</h5>
+                </section>
+            </div>
+            <div class="screen-center uk-width-2-3@l uk-width-4-5">
+                <section id="proj" class="uk-light"
+                    uk-parallax="y: 7vh,-7vh; opacity: 0,1,1,1,1,0; easing: 3.5; target: body; viewport: 0.8;" >
+                    <h2 class="uk-text-center">Projects</h2>        
+                    <h5 class="uk-text-center">Coming soon</h5>
+                    <div class="uk-text-center">
+                        <button class="uk-button uk-button-default">Read More</button>
+                    </div>
+                </section>
+            </div>
         </main>
         <footer class="uk-light">&copy; Copyright 2020 Yuu</footer>
         <script src="assets/main.js"></script>
