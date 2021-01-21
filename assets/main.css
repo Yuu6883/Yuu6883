@@ -78,6 +78,15 @@ svg { pointer-events: none; }
 }
 
 @media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    h3 {
+        font-size: 0.9em;
+    }
     .text-medium {
         font-size: 0.85em;
     }
@@ -98,7 +107,7 @@ svg { pointer-events: none; }
 
 .light-icon {
     stroke: transparent;
-    fill: white;
+    fill: rgb(66, 65, 65);
 }
 
 .dark-icon {
