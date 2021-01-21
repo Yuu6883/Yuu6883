@@ -55,10 +55,55 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.25em;
 }
 
+.skill-icon {
+    margin: 0.6em;
+    padding: 0.6em;
+    width: 2.3em;
+    height: 2.3em;
+    cursor: pointer;
+    outline: none;
+}
+
+svg { pointer-events: none; }
+
+@media only screen and (max-width: 1000px) {
+    .skill-icon {
+        margin: 0.4em;
+        padding: 0.4em;
+        width: 1.8em;
+        height: 1.8em;
+        cursor: pointer;
+        outline: none;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .text-medium {
         font-size: 0.85em;
     }
+    .skill-icon {
+        margin: 0.3em;
+        padding: 0.3em;
+        width: 1.5em;
+        height: 1.5em;
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+.uk-tooltip {
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: sans-serif;
+}
+
+.light-icon {
+    stroke: transparent;
+    fill: white;
+}
+
+.dark-icon {
+    stroke: transparent;
+    fill: black;
 }
 
 #page {
