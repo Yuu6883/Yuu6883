@@ -98,6 +98,10 @@ svg { pointer-events: none; }
         cursor: pointer;
         outline: none;
     }
+    #scroll {
+        position: absolute;
+        top: 80vh;
+    }
 }
 
 .uk-tooltip {
@@ -107,7 +111,7 @@ svg { pointer-events: none; }
 
 .light-icon {
     stroke: transparent;
-    fill: rgb(66, 65, 65);
+    fill: rgb(255, 255, 255);
 }
 
 .dark-icon {
