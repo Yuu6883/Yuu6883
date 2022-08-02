@@ -11,8 +11,5 @@ Current interests:
 Contact: Discord@Yuu#6883
 
 <a href="#">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=yuu6883&count_private=true&show_icons=true&theme=dark" />
-</a>
-<a href="#">
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yuu6883&layout=compact&theme=dark&hide=Java,CSS,HTML" />
 </a>
