@@ -1,5 +1,5 @@
 ## Yuu @Yuu6883
-Obviously not my actual name
+Full time SWE 💼
 
 Current interests: 
 - computer graphics
@@ -8,7 +8,7 @@ Current interests:
 - artificial intelligence
 - computer science research
 
-Contact: Discord@Yuu#6883
+Contact: Discord@yuu6883
 
 <a href="#">
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yuu6883&layout=compact&theme=dark&hide=Java,CSS,HTML" />
